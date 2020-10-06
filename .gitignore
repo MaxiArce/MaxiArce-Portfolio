@@ -1,0 +1,9 @@
+# Node related files
+/node_modules/*
+package-lock*
+package.json*
+
+# Seo related files
+sitemap*
+robots*
+

@@ -1,0 +1,384 @@
+html {
+  overflow-x: hidden; }
+
+body {
+  background-color: black !important;
+  font-family: "Montserrat", sans-serif !important;
+  width: 100%; }
+
+h1 {
+  color: white; }
+
+h2 {
+  color: white;
+  font-size: 20px;
+  margin: 10px 5%; }
+
+p {
+  color: white;
+  font-size: 16px;
+  font-weight: 200;
+  margin: 0px 5% 50px 5%; }
+
+.navbar {
+  background: rgba(0, 0, 0, 0.8);
+  animation-name: fade;
+  animation-duration: 1s; }
+
+.nav-link:hover {
+  border-bottom: 2px solid white;
+  border-radius: 1px; }
+
+.navbar-toggler {
+  border: transparent; }
+  .navbar-toggler .collapsed {
+    border: transparent; }
+
+.nav-item a {
+  text-align: center;
+  font-size: 24px; }
+
+.container-fluid {
+  width: 100%;
+  overflow-x: hidden;
+  animation-name: fade;
+  animation-duration: 3s; }
+
+.row-landing__title {
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+  margin: 250px 10% 150px 10%; }
+
+.row-proyecto-PS__image {
+  max-width: 90%;
+  margin: 0px 5% 20px 5%; }
+
+.row-proyecto-doggo__image {
+  width: 150%;
+  margin: 100px 0px 20px -20%; }
+
+.row-proyecto-helping__image {
+  width: 200%;
+  margin: 0px 0% 20px -50%; }
+
+footer {
+  display: inline-block;
+  width: 100%;
+  margin: 0px;
+  color: rgba(0, 0, 0, 0.8); }
+  footer p {
+    margin-bottom: 0;
+    text-align: center;
+    color: white; }
+
+.card-list {
+  width: 100%; }
+
+.card-item {
+  margin-top: 100px;
+  background-color: black;
+  border: 0px;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  animation-name: reveal;
+  animation-duration: 1s; }
+  .card-item img {
+    width: 100%;
+    border-radius: 12px; }
+  .card-item h2 {
+    color: white;
+    font-size: 32px;
+    margin: 0px; }
+  .card-item p {
+    color: white;
+    font-size: 24px;
+    margin: 5px 0px 15px 0px; }
+
+.card-gradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  border-color: transparent;
+  opacity: 1;
+  background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0) 100%); }
+
+.contact-form {
+  position: absolute;
+  width: 100%;
+  margin: 100px 0px 0px 0px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .contact-form form {
+    display: flex;
+    flex-direction: column; }
+  .contact-form .contact-form__label {
+    color: white;
+    max-width: 90%;
+    margin: 0px 5%; }
+  .contact-form .contact-form__textarea {
+    max-width: 90%;
+    border-radius: 12px;
+    margin: 0px 5%; }
+  .contact-form .contact-form__input {
+    max-width: 90%;
+    height: 40px;
+    border-radius: 12px;
+    margin: 0px 5% 10px 5%; }
+  .contact-form .contact-form__input--button {
+    background-color: #a3a3a3;
+    max-width: 70%;
+    height: 40px;
+    border-radius: 12px;
+    margin: 0px 15% 30px 15%; }
+
+.container-resume {
+  width: 100%;
+  margin: 0px 0px 20px 0px; }
+  .container-resume div {
+    animation-name: reveal;
+    animation-duration: 1s;
+    transition: 0.2s; }
+
+.row-info {
+  margin: 80px 0px 0px 0px;
+  animation-name: fade;
+  animation-duration: 3s; }
+  .row-info img {
+    max-width: 60%;
+    margin: 0px 20% 80px 20%; }
+  .row-info h2 {
+    margin: 10px 0px; }
+  .row-info p {
+    margin: 10px 0px; }
+
+.row-secciones {
+  width: 100%;
+  margin: 0px;
+  padding: 0px 15px; }
+  .row-secciones div {
+    padding: 0px; }
+  .row-secciones h2 {
+    color: white;
+    font-size: 28px;
+    margin: 80px 0px 0px 0px;
+    padding: 0px; }
+  .row-secciones h3 {
+    color: white;
+    font-size: 20px;
+    margin: 20px 0px 10px 0px;
+    padding: 0px; }
+  .row-secciones p {
+    color: white;
+    font-size: 16px;
+    margin: 2px;
+    padding: 0px; }
+  .row-secciones span {
+    color: #a3a3a3;
+    font-style: italic;
+    font-size: 14px; }
+  .row-secciones img {
+    margin: 10px 20px;
+    max-width: 40%;
+    max-height: 120px; }
+  .row-secciones .row-secciones-habilidades {
+    background-color: black;
+    width: 100%;
+    margin: 0px; }
+    .row-secciones .row-secciones-habilidades .col-habilidades__titulo {
+      background-color: black;
+      padding: 0px;
+      width: 100%; }
+    .row-secciones .row-secciones-habilidades .col-habilidades__bar {
+      z-index: 10;
+      border-radius: 10px;
+      margin: 8px 0px;
+      padding: 0px;
+      background-color: grey;
+      width: 100%; }
+    .row-secciones .row-secciones-habilidades .col-habilidades__bar--porcentaje {
+      z-index: 100;
+      border-radius: 10px;
+      margin: 0px;
+      padding: 0px;
+      background-color: white;
+      height: 100%; }
+    .row-secciones .row-secciones-habilidades .col-habilidades__bar-label {
+      padding: 0px;
+      text-align: center; }
+    .row-secciones .row-secciones-habilidades .col-habilidades__bar--porcentaje10 {
+      width: 10%; }
+    .row-secciones .row-secciones-habilidades .col-habilidades__bar--porcentaje15 {
+      width: 15%; }
+    .row-secciones .row-secciones-habilidades .col-habilidades__bar--porcentaje20 {
+      width: 20%; }
+    .row-secciones .row-secciones-habilidades .col-habilidades__bar--porcentaje25 {
+      width: 25%; }
+    .row-secciones .row-secciones-habilidades .col-habilidades__bar--porcentaje30 {
+      width: 30%; }
+    .row-secciones .row-secciones-habilidades .col-habilidades__bar--porcentaje35 {
+      width: 35%; }
+    .row-secciones .row-secciones-habilidades .col-habilidades__bar--porcentaje40 {
+      width: 40%; }
+    .row-secciones .row-secciones-habilidades .col-habilidades__bar--porcentaje45 {
+      width: 45%; }
+    .row-secciones .row-secciones-habilidades .col-habilidades__bar--porcentaje50 {
+      width: 50%; }
+    .row-secciones .row-secciones-habilidades .col-habilidades__bar--porcentaje55 {
+      width: 55%; }
+    .row-secciones .row-secciones-habilidades .col-habilidades__bar--porcentaje60 {
+      width: 60%; }
+    .row-secciones .row-secciones-habilidades .col-habilidades__bar--porcentaje65 {
+      width: 65%; }
+    .row-secciones .row-secciones-habilidades .col-habilidades__bar--porcentaje70 {
+      width: 70%; }
+    .row-secciones .row-secciones-habilidades .col-habilidades__bar--porcentaje75 {
+      width: 75%; }
+    .row-secciones .row-secciones-habilidades .col-habilidades__bar--porcentaje80 {
+      width: 80%; }
+    .row-secciones .row-secciones-habilidades .col-habilidades__bar--porcentaje85 {
+      width: 85%; }
+    .row-secciones .row-secciones-habilidades .col-habilidades__bar--porcentaje90 {
+      width: 90%; }
+    .row-secciones .row-secciones-habilidades .col-habilidades__bar--porcentaje95 {
+      width: 95%; }
+    .row-secciones .row-secciones-habilidades .col-habilidades__bar--porcentaje100 {
+      width: 100%; }
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 10% 0px 10%; }
+
+.about-me__image {
+  max-width: 50%;
+  margin-bottom: 50px; }
+
+.about-me__title {
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+  font-size: 20px; }
+
+.about-me__text {
+  text-align: center;
+  color: white;
+  font-size: 18px; }
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 36px; }
+  p {
+    font-size: 20px; }
+  .row-proyecto-PS {
+    margin-top: 100px;
+    margin-bottom: 100px; }
+  .row-proyecto-doggo {
+    margin-bottom: 150px; }
+  .row-proyecto-helping__image {
+    width: 100%;
+    margin: 0px 0% 40px 0%; }
+  .card-list {
+    display: flex;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .card-item {
+    background-color: black;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 250px;
+    border-radius: 10px;
+    border: 0px;
+    box-shadow: -1rem 0 3rem #000; }
+    .card-item img {
+      width: 100%;
+      border-radius: 12px; }
+    .card-item h2 {
+      color: white;
+      font-size: 24px;
+      margin: 0px; }
+    .card-item p {
+      color: white;
+      font-size: 12px;
+      margin: 5px 0px 15px 0px; }
+    .card-item:hover {
+      transition: all 0.2s;
+      transform: translateY(-50px); }
+      .card-item:hover ~ .card-item {
+        transform: translateX(100px); }
+    .card-item:not(:first-child) {
+      margin-left: -100px; }
+  .card-gradient {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    border-color: transparent;
+    opacity: 1;
+    background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0) 100%); }
+  .contact-form .contact-form__label {
+    max-width: 50%;
+    margin: 0px 25%; }
+  .contact-form .contact-form__textarea {
+    max-width: 50%;
+    margin: 0px 25%; }
+  .contact-form .contact-form__input {
+    max-width: 50%;
+    margin: 0px 25%; }
+  .contact-form .contact-form__input--button {
+    max-width: 50%;
+    margin: 0px 25%; } }
+
+@media (min-width: 992px) {
+  h2 {
+    font-size: 36px; }
+  p {
+    font-size: 18px; }
+  .nav-item a {
+    font-size: 16px; }
+  .row-proyecto-PS {
+    margin-top: 100px;
+    margin-bottom: 150px; }
+  .row-proyecto-doggo {
+    margin-bottom: 150px; }
+  .row-proyecto-doggo__image {
+    width: 150%; }
+  .row-proyecto-helping__image {
+    width: 90%;
+    margin: 0px 5% 40px 5%; }
+  .container-resume {
+    width: 90%;
+    margin: 0px 5% 20px 5%; }
+  .contact-form .contact-form__label {
+    max-width: 30%;
+    margin: 0px 35%; }
+  .contact-form .contact-form__textarea {
+    max-width: 30%;
+    margin: 0px 35%; }
+  .contact-form .contact-form__input {
+    max-width: 30%;
+    margin: 0px 35%; }
+  .contact-form .contact-form__input--button {
+    max-width: 20%;
+    margin: 0px 40%; } }
+
+@keyframes fade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes reveal {
+  0% {
+    bottom: -200px;
+    opacity: 0; }
+  100% {
+    bottom: 0px;
+    opacity: 1; } }
