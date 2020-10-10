@@ -167,7 +167,28 @@ footer {
 }
 
 //Contacto Style
-.contact-form {
+#alert{
+    z-index: 100;
+    margin: 0px;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-duration: 2s;
+    transition: 0.2s;
+    p{
+        margin: 0px;
+        background-color: white;
+        font-size: 24px;
+        color: black;
+        font-weight: 400;
+    }
+}
+
+.contact-form-container {
     position: absolute;
     width: 100%;
     margin: 100px 0px 0px 0px;
@@ -509,5 +530,17 @@ footer {
     100% {
         bottom: 0px;
         opacity: 1
+    }
+}
+
+@keyframes showAlert {
+    0% {
+        opacity: 0
+    }
+    50%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0
     }
 }
