@@ -56,13 +56,6 @@ p {
     animation-duration: 1s;
 }
 
-.nav-link {
-    &:hover {
-        border-bottom: 2px solid white;
-        border-radius: 1px;
-    }
-}
-
 .navbar-toggler {
     border: transparent;
     .collapsed {
@@ -74,6 +67,10 @@ p {
     a {
         text-align: center;
         font-size: 24px;
+    }
+    &:hover {
+        border-bottom: 2px solid white;
+        border-radius: 1px;
     }
 }
 
@@ -181,20 +178,20 @@ footer {
     }
     .contact-form__textarea {
         max-width: 90%;
-        border-radius: 12px;
+        border-radius: 4px;
         margin: 0px 5%;
     }
     .contact-form__input {
         max-width: 90%;
         height: 40px;
-        border-radius: 12px;
+        border-radius: 4px;
         margin: 0px 5% 10px 5%;
     }
     .contact-form__input--button {
         background-color: $grey;
         max-width: 70%;
         height: 40px;
-        border-radius: 12px;
+        border-radius: 4px;
         margin: 0px 15% 30px 15%;
     }
 }
@@ -297,8 +294,20 @@ footer {
         @each $percentage, $width in $percentageMap {
             .col-habilidades__bar--porcentaje#{$percentage} {
                 width: $width;
+                animation: fill-bar;
+                animation-duration: 1.5s;
+                transition: 0.5 ease-out;
+                @keyframes fill-bar {
+                    from  {
+                        width: 0px;
+                    }
+                    to {
+                        width: percentage;
+                    }
+                }
             }
-         }
+
+        }
     }
 }
 
