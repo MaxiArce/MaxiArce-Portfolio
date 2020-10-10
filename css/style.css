@@ -520,16 +520,16 @@ footer {
     border-color: transparent;
     opacity: 1;
     background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0) 100%); }
-  .contact-form .contact-form__label {
+  .contact-form-container .contact-form__label {
     max-width: 50%;
     margin: 0px 25%; }
-  .contact-form .contact-form__textarea {
+  .contact-form-container .contact-form__textarea {
     max-width: 50%;
     margin: 0px 25%; }
-  .contact-form .contact-form__input {
+  .contact-form-container .contact-form__input {
     max-width: 50%;
     margin: 0px 25%; }
-  .contact-form .contact-form__input--button {
+  .contact-form-container .contact-form__input--button {
     max-width: 50%;
     margin: 0px 25%; } }
 
@@ -553,16 +553,16 @@ footer {
   .container-resume {
     width: 90%;
     margin: 0px 5% 20px 5%; }
-  .contact-form .contact-form__label {
+  .contact-form-container .contact-form__label {
     max-width: 30%;
     margin: 0px 35%; }
-  .contact-form .contact-form__textarea {
+  .contact-form-container .contact-form__textarea {
     max-width: 30%;
     margin: 0px 35%; }
-  .contact-form .contact-form__input {
+  .contact-form-container .contact-form__input {
     max-width: 30%;
     margin: 0px 35%; }
-  .contact-form .contact-form__input--button {
+  .contact-form-container .contact-form__input--button {
     max-width: 20%;
     margin: 0px 40%; } }
 

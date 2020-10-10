@@ -439,7 +439,7 @@ footer {
         background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0) 100%);
     }
     //Contact Style
-    .contact-form {
+    .contact-form-container {
         .contact-form__label {
             max-width: 50%;
             margin: 0px 25%;
@@ -492,7 +492,7 @@ footer {
         margin: 0px 5% 20px 5%;
     }
     //Contact Style desktop
-    .contact-form {
+    .contact-form-container {
         .contact-form__label {
             max-width: 30%;
             margin: 0px 35%;
