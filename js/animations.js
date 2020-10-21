@@ -1,5 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function () { 
+    const mouse = document.querySelector('.mouse');
     const firstRow = document.querySelector('.row-proyecto-PS');
     const secondRowImage = document.querySelector('.row-proyecto-doggo__image');
     const thirdRowImage = document.querySelector('.row-proyecto-helping__image');
@@ -13,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         firstRow.style.animationName = 'reveal-200';
         firstRow.style.animationDuration = '2s';
         firstRow.style.visibility = 'visible';
+        mouse.style.visibility = 'hidden';
     }, {once : true});
 
     window.addEventListener('scroll', () => {

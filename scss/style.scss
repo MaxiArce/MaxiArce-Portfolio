@@ -91,6 +91,33 @@ p {
     text-align: center;
     margin: 250px 10% 150px 10%;
 }
+// Mouse Scroll icon 
+.mouse{
+    margin: 50px auto;
+    width: 100px;
+}
+.mouse-icon{    
+    margin: 50px auto;
+    width: 30px;
+    height: 45px;
+    border: 2px solid $grey;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+
+.mouse-wheel{
+    height: 6px;
+    margin: 2px auto 0;
+    display: block;
+    width: 3px;
+    background-color: grey;
+    border-radius: 50%;
+    -webkit-animation: 1.6s ease infinite wheel-up-down;
+   -moz-animation: 1.6s ease infinite wheel-up-down;
+    animation: 1.6s ease infinite wheel-up-down;
+}
 
 //Index Proyecto 1
 .row-proyecto-PS__image {
@@ -512,6 +539,7 @@ footer {
     }
 }
 
+//animations cards and rows
 
 @keyframes fade {
     0% {
@@ -571,5 +599,44 @@ footer {
     }
     100% {
         opacity: 0
+    }
+}
+//mouse icon animations
+
+@-webkit-keyframes wheel-up-down {
+    0% {
+        margin-top: 2px;
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        margin-top: 20px;
+        opacity: 0;
+    }
+}@-moz-keyframes wheel-up-down {
+    0% {
+        margin-top: 2px;
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        margin-top: 20px;
+        opacity: 0;
+    }
+}@keyframes wheel-up-down {
+    0% {
+        margin-top: 2px;
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        margin-top: 20px;
+        opacity: 0;
     }
 }
