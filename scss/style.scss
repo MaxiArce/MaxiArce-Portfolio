@@ -24,6 +24,7 @@ $percentageMap: (
 
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -172,7 +173,7 @@ footer {
     margin: 0px;
     width: 100%;
     position: absolute;
-    top: 100px;
+    top: 40vh;
     opacity: 0;
     display: flex;
     align-items: center;
@@ -192,9 +193,8 @@ footer {
     position: absolute;
     width: 100%;
     margin: 100px 0px 0px 0px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-content: center;
     form {
         display: flex;
         flex-direction: column;
@@ -422,11 +422,11 @@ footer {
             transition: all 0.2s;
             transform: translateY(-50px);
             &~.card-item {
-                transform: translateX(100px);
+                transform: translateX(60px);
             }
         }
         &:not(:first-child) {
-            margin-left: -100px;
+            margin-left: -60px;
         }
     }
     .card-gradient {
@@ -530,6 +530,35 @@ footer {
     100% {
         bottom: 0px;
         opacity: 1
+    }
+}
+
+@keyframes reveal-200 {
+    0% {
+        transform: translateY(200px);
+        opacity: 0
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1
+    }
+}
+
+@keyframes diagonal {
+    0%       { transform: translatex(-100px) translatey(200px) }
+    50%      { transform: translatex(-20px) translatey(20px); }
+    100%     { transform: translatex(0px) translatey(0px) }
+
+}
+
+@keyframes slide-top {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
 
